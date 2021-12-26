@@ -1,0 +1,86 @@
+.d ul{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+.d ul li {
+    list-style: none;
+   
+}
+.d ul li a{
+    text-decoration: none;
+    color: white ;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 30px;
+    padding: 1em;
+    white-space: nowrap;
+}
+.s h1{
+    color: brown;
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background: url("https://3.bp.blogspot.com/-96Et4XNglOk/V62BNsfN9RI/AAAAAAAAoNI/LkGDnGOJrwceYML5_TuvdCDoCYq2YcxiACLcB/s640/MS-Dhoni.jpg") no-repeat  center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.d{
+  
+   background:linear-gradient(to top, blue,grey, lightsalmon,coral );
+}
+
+.c3 p{
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80")
+
+}
+.c3 h1{
+    color: black  ;
+    text-align: center;
+    background:linear-gradient(coral,cyan);
+  
+  }
+  .c4{
+    color: red;
+    text-align: center;
+    background:linear-gradient(coral,cyan);
+    border: 30px solid green;
+  
+  }
+body{
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/12/dark-color-02.jpg");
+}
+.timeline ul{
+    
+    width: 6px;
+    margin:auto;
+    background:linear-gradient(blue,white,purple,cyan);
+    padding: 10px;
+    color: wheat;
+    text-decoration:bold;
+    
+}
+.timeline ul li{
+    width: 400px;
+    padding:20px;
+    background-image: url("https://previews.123rf.com/images/vinsalow/vinsalow1705/vinsalow170500026/78645097-grunge-texture-summer-colors-background-hd-photo-light-earth-concept.jpg");
+    list-style:none;
+    visibility: hidden;
+}
+.timeline ul li:nth-child(even){
+    position:relative;
+    left:70px;
+}
+.timeline ul li:nth-child(odd){
+    position:relative;
+    right:500px;
+}
+
+.timeline ul li.in-view{
+    
+    visibility: visible;
+}

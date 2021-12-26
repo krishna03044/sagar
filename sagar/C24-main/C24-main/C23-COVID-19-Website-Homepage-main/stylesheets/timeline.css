@@ -1,0 +1,170 @@
+/* styling for background image and overall content of the document */
+body {
+    background-image: url("../images/coronavirus-2.jpeg");
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    
+  }
+  
+  /* styling for navigation bar, menu items */
+  .container ul {
+   
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  /* navigation bar content - individual items - li */
+  .container ul li {
+    list-style: none;
+  }
+  /* navigation bar content - link text styling inside li - a */
+  .container ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding: 1em;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+  /* navigation bar content - link text styling inside
+  li - a with hover selector */
+  .container ul li a:hover {
+    border-bottom: 3px solid #fff;
+  }
+  
+  /* styling for banner image and text */
+  .header {
+    padding: 20px;
+    height: 100vh;
+    background: url("../images/Coronavirus-1.jpg") no-repeat  center;
+    background-size: cover;
+    position: relative;
+  }
+  .header h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .header .content {
+    position: relative;
+    top: 50%;
+    text-align: center;
+  }
+  
+  /* styling for content arranged using flex-box */
+  
+  /* first block of text (container, H1, P) */
+  .flex1 {
+    display: flex;
+    color: white;
+    padding: 100px 150px 150px 100px;
+    position: center;
+     background: linear-gradient(to bottom, #16222a, #4e4376);
+  }
+  
+  .flex1 h1 {
+    font-size: 325%;
+    text-align: center;
+  }
+  .flex1 p {
+    font-weight: 400%;
+    font-family: serif;
+    font-size: 150%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  /* second block of text (container, H1, P) */
+  
+  
+  /* third block of text 
+  (container to arrange child items vertically - flex-direction: row)
+  
+  */
+  .flex{
+    padding: 20px;
+    color: red;
+    background: linear-gradient(to bottom, grey, white, cyan );
+  }
+  .flex h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .flex p{
+    color: grey;
+    padding: 10px;
+    text-align: center;
+     font-weight: 40%;
+     text-indent: 30%;
+  }
+  .r{
+    color: white;
+    display: flex;
+  }
+  .c1{
+    border: 10px solid chocolate;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-image: url("https://publichealth.gsu.edu/files/2020/09/iStock-1209688759.jpg");
+    background-blend-mode: multiply;
+    background-color: white ;
+  }
+  
+  .c2{
+    display:flex;
+    flex-direction: column;
+  }
+  .c2r1 {
+    color: red;
+    background-image: url("https://media.istockphoto.com/photos/coronavirus-covid19-vaccine-picture-id1290513034?b=1&k=20&m=1290513034&s=170667a&w=0&h=-ySnI926NjLTjRX9B7uRg0Jkdlxz6Xr5zsJ7J40_uIU=");
+    text-indent: 30%;
+    padding: 10px;
+    border: 20px double coral;
+    border-radius: 10px;
+  }
+  .c2r2{
+    color: black;
+    text-indent: 10px;
+    background-image: url("https://s3.envato.com/files/296684588/IMG_2020-0679.jpg");
+    padding: 10px;
+    margin: 5px;
+    border:  10px double rgb(160, 39, 113);
+    border-radius: 20px;
+  }
+  .timeline ul{
+       width:10px;
+       margin:auto;
+       background-color: white;
+       padding: 6px;
+  }
+  .timeline ul li{
+      width:400px;
+      padding: 10px;
+      background: cyan;
+      list-style:none;
+      /* new*/
+      visibility: hidden;
+  }
+
+.timeline ul li:nth-child(even){
+    position: relative;
+    right:600px;
+    
+}
+.timeline ul li:nth-child(odd){
+    position: relative;
+    right: -40px;
+    
+}
+  /* new*/
+.timeline ul li.view{
+  
+
+  visibility: visible;
+}

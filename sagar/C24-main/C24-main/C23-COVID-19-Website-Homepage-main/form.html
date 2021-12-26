@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Covid-19</title>
+	<!-- link stylesheet file -->
+	<link rel="stylesheet" href="./stylesheets/form.css">
+</head>
+
+<body>
+	<!-- Banner section of web-page -->
+	<div class="header">
+		<!-- Navigation Bar with menu items -->
+		<div id="navbar">
+			<div class="container">
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./form.html">form</a></li>
+					<li><a href="timeline.html">time line</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<!--Text to define heading of the web page-->
+		<div class="main">
+			<h1>The Coronavirus test Form</h1>
+		</div>
+	</div>
+    <div class="main">
+        <form id ="testform">
+          
+                <h2 class="name">Name</h2>
+                <input type="text" name="fitstname" id="firstname">
+                <h2 class="name">Profession</h2>
+                <input type="text" name="prof" id="prof">
+                <h2 class="name">Email</h2>
+                <input type="text" name="email" id="email">
+                <h2 class="name">DOB</h2>
+                <input type="date" name="dob" id="dob">
+                <h2 class="name">State</h2>
+                <select name="state" id="state">
+                    <option value="Delhi">Delhi</option>
+                    <option value="kar">kar</option>
+                </select>
+                <h2 class="name">travelled to any covid affected countryes</h2>
+                <div id="travel">
+                    <input type="radio" name="option" value="yes" id="yes" checked><label for="yes" >Yes</label>
+                    <input type="radio" name="option" value="no" id="yes"><label for="yes">No        </label>
+                </div>
+                <h2 class="name">symptoms to any covid affected countryes</h2>
+                <div id="travel">
+                    <input type="checkbox" name="sym" value="coughing" id="yes"><label for="yes" >coughing</label>
+                    <input type="checkbox" name="sym" value="dry coughing" id="yes"><label for="yes">dry coughing        </label>
+                </div>
+                <input type="submit" value="submit">
+        </form>
+    </div>
+    <script src="./script/form.js"></script>
+</body>
+</html>
